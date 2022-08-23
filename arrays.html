@@ -7,11 +7,13 @@
         let cars= ["bmw", "volvo", "honda"]
         document.getElementById("array").innerHTML = cars;
 
-        // to access an array element
+        //-------Array Operations----------//
+
+        //to access an array element
         let bmw = cars[0];
         document.getElementById("array").innerHTML = bmw;
 
-        // array length property
+        //array length property
         let len = cars.length;
         document.getElementById("array").innerHTML = len;
 
@@ -19,11 +21,46 @@
         let last = cars[cars.length -1];
         document.getElementById("array").innerHTML = last;
 
-        // loop over an array item
+        //loop over an array item
         cars.forEach((item, index, array) =>  {
             document.write("item : " + item, " index : " + index + "<br>")
         })
 
+        //-------Array Methods----------//
 
+        // toString(): convert an array into string
+        document.getElementById("array").innerHTML = cars.toString();
+
+        //pop(): remove the last element from an array
+        let last1 = cars.pop();
+        document.getElementById("array").innerHTML = last1; // honda
+
+        let last2 = cars[cars.length - 1];
+        document.write(last2); //volvo
+
+        //push(): add a new element at the end of an array
+        cars.push("Audi");
+        document.getElementById("array").innerHTML = cars;
+
+        //shift(): remove the first element from an array
+        cars.shift();
+        document.getElementById("array").innerHTML = cars
+
+        //unshift(): add an element at the beginning of an array
+        cars.unshift("Hyundai");
+        document.getElementById("array").innerHTML = cars;
+
+        //concat(): create a new array by merging exixting arrays
+        let bikes = ["yamaha", "suzuki", "royal enfield"];
+        let vehicles = cars.concat(bikes)
+        document.getElementById("array").innerHTML = vehicles;
+
+        //sort(): sort an array in ascending order
+        vehicles.sort();
+        document.getElementById("array").innerHTML = vehicles;
+
+        //reverse(): reverve the elements of an array, sort in decending order
+        vehicles.reverse();
+        document.write(vehicles);
     </script>
 </html>    
