@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title>
+            JavaScript Loops
+        </title>        
+    </head>
+    <body>
+        <h1>JavaScript for loop</h1>
+        <h2>JavaScript while loop</h2>
+        <h3>JavaScript do-while loop</h3>
+        <script>
+            // JavaScript for loop
+            let x;
+            for(x=0; x<5; x++)
+            console.log("---for loop---", x)
+
+            // JavaScript while loop
+            let y = 1;
+            while(y<=5){
+                console.log("---while loop---", y)
+                y++
+            }
+
+            // JavaScript do-while loop
+            let z = 2;
+            do{
+                console.log("---do while loop---", z)
+                z++
+            }
+            while(z < 5)
+
+            // break is used to break out of a loop
+            let i;
+            for(i=1; i<=10; i++){
+                document.write(i + " is the current number" + "<br>" )              
+                if(i==5){
+                    break;
+                }
+            }
+
+            // skipping a loop cycle: continue is used
+            let j;
+            for(j=1; j<=10; j++){
+                if(j===3){
+                    continue;
+                }
+                document.write(j + " is the current number" + "<br>" )
+            }
+        </script>    
+    </body>
+</html>
