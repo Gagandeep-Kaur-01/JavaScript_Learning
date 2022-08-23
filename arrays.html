@@ -1,0 +1,29 @@
+<html>
+    <head>Array in JavaScript</head>
+    <body>
+        <p id="array"></p>
+    </body>
+    <script>
+        let cars= ["bmw", "volvo", "honda"]
+        document.getElementById("array").innerHTML = cars;
+
+        // to access an array element
+        let bmw = cars[0];
+        document.getElementById("array").innerHTML = bmw;
+
+        // array length property
+        let len = cars.length;
+        document.getElementById("array").innerHTML = len;
+
+        // access last array element
+        let last = cars[cars.length -1];
+        document.getElementById("array").innerHTML = last;
+
+        // loop over an array item
+        cars.forEach((item, index, array) =>  {
+            document.write("item : " + item, " index : " + index + "<br>")
+        })
+
+
+    </script>
+</html>    
