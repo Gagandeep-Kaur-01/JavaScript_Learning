@@ -24,5 +24,18 @@
         student.studies = "Computer Science";
         document.getElementById("object").innerHTML = student.name + " of the age" + student.age + " studies" + student.studies;
       </script>
+
+      <!-- Use an Object Constructor to create and define a JavaScript Object -->
+      <script>
+        function stud(name, age, studies){
+          this.name = name;
+          this.age = age;
+          this.studies = studies;
+        }
+        var student = stud("Abc", 22, "Computer Science");
+        console.log("-----student----", student)
+        // document.getElementById("object").innerHTML = student.name + " of the age" + student.age + " studies" + student.studies;
+        document.write(student.name + " of the age" + student.age + " studies" + student.studies)
+      </script>
     </body>
 </html>
