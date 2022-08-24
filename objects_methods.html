@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>JavaScript Object Methods</title>
+    </head> 
+    <body>
+        <h1>JavaScript Methods</h1>
+        <p id ="object"></p>
+        <button id ="click me"> Click me </button>  
+        
+        <script>
+            let user = {
+                name: "Abc",
+                age: 24
+            }
+            function sayHi(){
+                console.log("-----in function--")
+                alert("Hello");
+            }
+            user.message = sayHi;
+            document.getElementById("object").innerHTML = "Hi " + user.name;
+            document.getElementById("click me").onclick = user.message;
+        </script>
+    </body>
+</html>      
