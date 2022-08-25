@@ -12,10 +12,26 @@
         myFunction(2)
     </script>
 
+    <!-- Function Expression -->
     <script>
         let x = function(){
             alert("Hello");
         }
         document.getElementById("function").innerHTML = x();
+    </script>
+
+    <!-- The Function Constructor -->
+    <script>
+        var my_function = new Function("a", "b", "return a + b")
+        var y = my_function(2,3)
+        document.getElementById("function").innerHTML = "The sum is : " + y;
+    </script>
+
+    <!-- Self-Invoking functions -->
+    <script>
+        (function(){
+            alert("Hello! Welcome" )
+        })()
+
     </script>
 </html>
