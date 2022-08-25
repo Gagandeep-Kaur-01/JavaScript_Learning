@@ -40,13 +40,19 @@
                 model: "Audi A4",
                 color: "Bright Red",
                 fuel_type: "",
-                set fuel(fuel){
-                    this.fuel_type = fuel;
+
+                //accessor property(setter)
+                set fuel(fuelType){
+                    this.fuel_type = fuelType;
                 },
             };
-            car.fuel = "Petrol"
-            document.getElementById("access").innerHTML = car.fuel_type;
+            console.log("-------car.fuel_type initial------", car.fuel_type); // " "
 
+            // change(set) object property using a setter
+            car.fuel = "Petrol"
+
+            console.log("-------car.fuel_type------", car.fuel_type); // Petrol
+            document.getElementById("access").innerHTML = car.fuel_type;
         </script>
 
        
