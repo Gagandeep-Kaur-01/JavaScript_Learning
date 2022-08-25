@@ -14,10 +14,23 @@
                 model: "BMW 320d",
                 color: "Black",
                 fuel_type: "Diesel",
+
+                // accessor property(getter)
                 get fuel(){
                     return this.fuel_type
                 },
             };
+
+            // accessing data property
+            console.log(car.fuel_type); // Diesel
+            
+            // accessing getter methods
+            console.log(car.fuel); // Monica
+            
+            // trying to access as a method
+            console.log(car.fuel()); // error
+
+
             document.getElementById("access").innerHTML = car.fuel;
         </script>
 
