@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>JavaScript Accessors</title>
+    </head> 
+    <body>
+        <h1>JavaScript Accessors</h1>
+        <p id ="access"></p>
+
+         <!-- Getter is used to get the value of the properties of an object.
+        Setter: to set the value   -->
+
+        <script>
+            var car = {
+                model: "BMW 320d",
+                color: "Black",
+                fuel_type: "Diesel",
+                get fuel(){
+                    return this.fuel_type
+                },
+            };
+            document.getElementById("access").innerHTML = car.fuel;
+        </script>
+
+       
+    </body>
+</html>        
