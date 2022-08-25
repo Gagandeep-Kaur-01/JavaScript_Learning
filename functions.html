@@ -41,5 +41,23 @@
         }
         let z = Product(2, 3)
         document.getElementById("function").innerHTML = "The product is : " + z;
-    </script>        
-</html>
+    </script>  
+
+    <!-- Function as object -->
+    <script>
+        var body = "return Math.PI * rad * rad"
+        var circle = new Function("rad", body)
+        alert(circle(5));
+    </script> 
+    
+    <!-- Arrow Function -->
+    <script>
+        const myFunc = (a,b,c) => {
+            return a*b*c;            
+        }
+        let product = myFunc(2, 3, 4)
+        document.getElementById("function").innerHTML = "The product is : " + product;
+    </script>
+
+    
+    </html>
