@@ -32,6 +32,14 @@
         (function(){
             alert("Hello! Welcome" )
         })()
-
     </script>
+
+    <!-- Function as value -->
+    <script>
+        function Product(a, b){
+            return a * b;
+        }
+        let z = Product(2, 3)
+        document.getElementById("function").innerHTML = "The product is : " + z;
+    </script>        
 </html>
