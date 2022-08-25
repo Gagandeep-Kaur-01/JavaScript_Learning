@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>
+            JavaScript Functions
+        </title>
+        <p id="function"></p>
+    </head>
+    <script>
+        function  myFunction(val){
+            document.getElementById("function").innerHTML = val*val;
+        }
+        myFunction(2)
+    </script>
+
+    <script>
+        let x = function(){
+            alert("Hello");
+        }
+        document.getElementById("function").innerHTML = x();
+    </script>
+</html>
