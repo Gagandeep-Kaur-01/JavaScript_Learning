@@ -1,0 +1,33 @@
+<!-- 
+    * JavaScript is predominantly single threaded: 
+        : All processes continues the processes in single sequence.
+        : This makes it slow and restrictive
+    * With the help of promises and other Asynchronous concept.
+    * JavaScript can perform long network requests simultaneously without blocking the main thread.    
+-->
+
+<html>
+    <head>
+        <title> JavaScript Promises</title>
+        <p id = "promises"></p>
+    </head>
+    <body>
+        <script>
+            let car = new Promise(function(resolve, reject){
+                fuel_fullTank = true;
+                if(fuel_fullTank){
+                    resolve()
+                }
+                else{
+                    reject()
+                }
+            });
+            car.then(function(){
+                document.write("The fuel tank is full. Happy Driving!!")
+            }).catch(function(){
+                document.write("The full tak is empty.")
+            })
+        </script>
+
+    </body>    
+</html>
