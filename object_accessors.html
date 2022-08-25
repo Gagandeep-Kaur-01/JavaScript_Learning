@@ -7,7 +7,7 @@
         <p id ="access"></p>
 
          <!-- Getter is used to get the value of the properties of an object.
-        Setter: to set the value   -->
+          -->
 
         <script>
             var car = {
@@ -19,6 +19,21 @@
                 },
             };
             document.getElementById("access").innerHTML = car.fuel;
+        </script>
+
+        <!--  Setter: to set the value -->
+        <script>
+            var car = {
+                model: "Audi A4",
+                color: "Bright Red",
+                fuel_type: "",
+                set fuel(fuel){
+                    this.fuel_type = fuel;
+                },
+            };
+            car.fuel = "Petrol"
+            document.getElementById("access").innerHTML = car.fuel_type;
+
         </script>
 
        
