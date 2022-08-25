@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>
+            Closures
+        </title>
+        <p id="function"></p>
+    </head>
+    <body>
+        <!-- 
+            Closures in JavaScript is a feature where an inner function has access to the outer function's variables 
+            3 scope chains:-
+            1. has access to its own scope, i.e. the variables defined within its curly braces.
+            2. has access to the variables of the outer functions.
+            3. has access to the global variables.
+        -->
+        <script>
+            let a = 10;
+            function text(){
+                let b = 20;
+                document.write(a+b)
+            }
+            text();
+        </script>
+
+        <script>
+            var x = 10;
+            function first(){
+                var y = 20;
+                function sec(){
+                    var z = x + y + 30;
+                    return z;
+                }
+                return sec();
+            }
+            var sum = first()
+       
+            document.getElementById("function").innerHTML = "The sum is " + sum + "<br>";
+
+        </script>
+    </body>
+</html>    
